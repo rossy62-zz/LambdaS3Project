@@ -1,0 +1,15 @@
+{
+  "name": "CreateThumbnail",
+  "description": "CreateThumbnailLambdaFunction",
+  "region": "us-west-2",
+  "handler": "CreateThumbnail.lambda_handler",
+  "role": "arn:aws:iam::353704199875:role/lambda-s3-execution-role",
+  "requirements": ["pygithub"],
+  "ignore": [
+    "circle.yml",
+    ".git",
+    "/*.pyc"
+  ],
+  "timeout": 30,
+  "memory": 512
+}
